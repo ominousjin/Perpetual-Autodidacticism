@@ -1,6 +1,6 @@
 # Java
 
-Reference: [Java Full Course by Bro Code (YT)](https://www.youtube.com/watch?v=xk4_1vDrzzo)
+Reference: [Java by Bro Code](https://www.youtube.com/watch?v=xk4_1vDrzzo)
 
 ```
 - Computer languages are on a spectrum between being high-level and low-level.
