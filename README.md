@@ -1,9 +1,9 @@
 # Perpetual-Autodidacticism
 Art of self-directed learning in the realm of computer technologies.
 
+### Programming Languages:
 ```
-Languages that have been included so far:
-|--> C Language
-|--> JavaScript
-|--> Python
+|- C Language
+|- JavaScript
+|- Python
 ```
