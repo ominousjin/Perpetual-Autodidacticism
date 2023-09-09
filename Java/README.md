@@ -11,11 +11,9 @@ Reference: [Java by Bro Code](https://www.youtube.com/watch?v=xk4_1vDrzzo)
   |--> Source code is understandable by humans and it's compiled to a machine code.
 ```
 
-![image](https://github.com/akarsh0913/Perpetual-Autodidacticism/assets/134067749/2fa7893d-a769-4616-967f-6d6d3d969dff)
-
 <ul>
 <li>When we create java source code, the file ends with a `.java` file extension.</li>
-<li>Compiling code is basically transforming source code to mahcine code.</li>
+<li>Compiling code is basically transforming source code to machine code.</li>
 <li>This is because, machines can't read source code and vice versa.</li>
 </ul>
 
@@ -25,12 +23,16 @@ Reference: [Java by Bro Code](https://www.youtube.com/watch?v=xk4_1vDrzzo)
   |--> and same goes for others.
 ```
 
+![image](https://github.com/akarsh0913/Perpetual-Autodidacticism/assets/134067749/73c7fe88-cf3f-4ea3-b8fc-aaddab842966)
+
 However, Java has a solution to this problem:
 <ul>
 <li>With Java, we have an intermediary step, where we can compile source code to a format called byte code.</li>
 <li>Byte code is cross-platform and ends with a `.class` file extension.</li>
 <li>A byte code file that was generated on a Mac can also be executed in a Windows PC using a JVM.</li>
 </ul>
+
+![image](https://github.com/akarsh0913/Perpetual-Autodidacticism/assets/134067749/b465ae24-0d74-44c7-8f95-2dedb7eb16e4)
 
 ```
 - JVM translates the byte code to machine code.
@@ -39,3 +41,5 @@ However, Java has a solution to this problem:
 - It contains developer tools to help us code as well as a JRE.
 - JRE (Java Runtime Environment) which contains a library, toolkits and JVM.
 ```
+
+![Untitled](https://github.com/akarsh0913/Perpetual-Autodidacticism/assets/134067749/c06ba1a8-1e93-4bd7-98d0-6758de67f2aa)
