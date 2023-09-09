@@ -1,5 +1,7 @@
 # Java
 
+Reference: [Java Full Course by Bro Code (YT)](https://www.youtube.com/watch?v=xk4_1vDrzzo)
+
 ```
 - Computer languages are on a spectrum between being high-level and low-level.
 - Computers only understand binary and it's referred to as machine code.
