@@ -9,6 +9,8 @@
   |--> Source code is understandable by humans and it's compiled to a machine code.
 ```
 
+![image](https://github.com/akarsh0913/Perpetual-Autodidacticism/assets/134067749/2fa7893d-a769-4616-967f-6d6d3d969dff)
+
 <ul>
 <li>When we create java source code, the file ends with a `.java` file extension.</li>
 <li>Compiling code is basically transforming source code to mahcine code.</li>
