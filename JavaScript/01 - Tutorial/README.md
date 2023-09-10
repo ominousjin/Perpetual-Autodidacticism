@@ -42,7 +42,7 @@ window.alert("Pizzas are free today!"); // An alert box with msg 'Pizzas are fre
 ```
 
 <ol type="a">
-    <li>The `window` object represents the browser's window.s</li>
+    <li>The window object represents the browser's window</li>
     <li>window.alert() is a method that displays a dialog box with a specified message and an OK button.</li>
     <li>It is often used to provide simple alerts or notifications to users.</li>
     <li>It interrupts the user's interaction with the page until they dismiss the alert by clicking the OK button.</li>
