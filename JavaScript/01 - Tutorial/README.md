@@ -46,5 +46,4 @@ b. It is often used to provide simple alerts or notifications to users.
 c. It interrupts the user's interaction with the page 
     --> until they dismiss the alert by clicking the OK button.
 
-
- 
+![image](https://github.com/akarsh0913/Perpetual-Autodidacticism/assets/134067749/6bac5c1f-aac6-4493-8970-6873ffd9ee83)
