@@ -369,6 +369,7 @@ namespace App1
         }
 
         // Here return type is int, so an integer is sent back as an information.
+        // return type can be any value like a string/double or even an array 
         static int cube(int num)
         {
             int result = num * num * num;
