@@ -5,11 +5,15 @@
 
 <p align="center"><i>Generated using <a href="https://leonardo.ai/">Leonardo.Ai</a></i></p>
 
-### Programming Languages:
-```
-|- C Language
-|- C#
-|- Java
-|- JavaScript
-|- Python
-```
+### Contents
+<ol type="1">
+  <li>Programming Languages</li>
+  <ul>
+    <li><a href="https://github.com/akarsh0913/Perpetual-Autodidacticism/tree/main/C%20Language" target="_blank">C Language</a></li>
+    <li><a href="https://github.com/akarsh0913/Perpetual-Autodidacticism/tree/main/C%23" target="_blank">C#</a></li>
+    <li><a href="https://github.com/akarsh0913/Perpetual-Autodidacticism/tree/main/Java" target="_blank">Java</a></li>
+    <li><a href="https://github.com/akarsh0913/Perpetual-Autodidacticism/tree/main/JavaScript" target="_blank">JavaScript</a></li>
+    <li><a href="https://github.com/akarsh0913/Perpetual-Autodidacticism/tree/main/Python" target="_blank">Python</a></li>
+  </ul>
+</ol>
+
