@@ -677,7 +677,7 @@ namespace App1
             // A while loop repeatedly executes a set of instructions as long as a specified condition is true.
             int i = 0;
 
-            while (i < 5) // Accepted parameters are only boolean values
+            while (i < 5) // Conditions are passed as parameters (boolean values allow looping)
             {
                 Console.WriteLine("Test Succeeded");
                 i++; // Increment operator increments the value of variable until the specified condition becomes false.
