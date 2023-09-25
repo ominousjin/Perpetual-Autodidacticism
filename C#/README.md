@@ -200,7 +200,7 @@ namespace App1
 }
 ```
 
-### Building a Calculator
+### Calculator for Addition
 
 ```
 using System;
