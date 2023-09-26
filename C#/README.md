@@ -938,7 +938,7 @@ namespace App1
                 {
                     // For each value of j,
                     // the code accesses and prints the element at the current row i and column j using arr2D[i, j].
-                    Console.Write(arr2D[i, j] + " ");
+                    Console.Write(arr2D[i, j] + " "); // " " is appended with arr2D[i, j] to add space between elements
                 }
                 Console.WriteLine();
             }
