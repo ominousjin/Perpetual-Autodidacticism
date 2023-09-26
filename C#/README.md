@@ -2,6 +2,8 @@
 
 <p>[Logging Progress Only]</p>
 
+Reference: [C# Course by Mike Dane](https://www.youtube.com/watch?v=GhQdlIFylQ8&t=11588s)
+
 ### Variables
 
 ```
