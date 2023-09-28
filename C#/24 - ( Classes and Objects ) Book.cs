@@ -54,8 +54,8 @@ namespace App1
          * and provide more control over access and validation.
         */
 
-        public string title;
-        public string author;
+        public string title = "";
+        public string author = "";
         public int pages;
 
         // What we have declared here are also referred to as class attributes.
