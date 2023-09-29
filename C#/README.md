@@ -1808,3 +1808,71 @@ namespace App1
     }
 }
 ```
+
+### Static Methods & Classes
+
+- UsefulTools.cs
+  
+```
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace App1
+{
+    // Using static attribute with classes
+    // eliminates the need of creating an object or an instance of the class.
+
+    // So, for e.g., if static wasn't used here, we would still be able to create an object.
+    // like UsefulTools myTools = new UsefulTools();
+    // Using static attribute prevents that.
+    internal static class UsefulTools
+    {
+        // Static Methods
+        // A static method is basically just a method that belongs to the class itself.
+
+        // Usually, when we create methods inside classes, those are used on the objects.
+
+        // But a static method belongs to an actaul class,
+        // which means you don't have to create an object
+        // in order to use it and access it.
+
+        public static void SayHi(string name)
+        {
+            Console.WriteLine($"Hello {name}");
+        }
+    }
+}
+```
+
+- Program.cs
+  
+```
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading;
+using System.Threading.Tasks;
+
+namespace App1
+{
+    class Program
+    {   
+        static void Main(string[] args)
+        {
+            // Example of static method in C# can be Math class
+            // Math.Sqrt(144);
+            // Math is a static class (i.e. object/instance of Math class cannot be created which is also useful).
+            // and Sqrt() is a static method which means we don't have to create an object/instance of Math class to use it.
+
+            // Demonstration using UsefulTools class
+            UsefulTools.SayHi("Jacob");
+
+            Console.ReadLine();
+        }
+    }
+}
+```
