@@ -1689,3 +1689,122 @@ namespace App1
     }
 }
 ```
+
+### Static Attribute
+
+- Song.cs
+
+```
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace App1
+{
+    internal class Song
+    {
+        public string title;
+        public string artist;
+        public int instanceID;
+        public static int songCount = 0;
+
+        public Song(string arg_Title, string arg_Artist)
+        {
+            title = arg_Title;
+            artist = arg_Artist;
+            instanceID = ++songCount;
+        }
+
+        public int getSongCount()
+        {
+            return instanceID;
+        }
+    }
+}
+
+// In object-oriented programming, static variables, like songCount,
+// are shared across all instances of the class.
+
+// When a static variable is incremented,
+// its updated value is visible to all instances of the class.
+
+// When songCount is initially 0 and a new Song object is created,
+// the ++songCount expression in the constructor pre-increments songCount to 1
+// and assigns this value to the instanceID of the current object.
+// After this operation, songCount is 1 and the instanceID of the newly created object is also 1.
+
+// If another Song object is created, the same process occurs:
+// - songCount is incremented to 2.
+// - The new object's instanceID is set to the updated value of songCount, which is 2.
+
+// Difference between Pre-Increment Operation & Post-Increment Operation
+
+/*
+ * Pre-Increment Operation:
+ * 
+ * - songCount is incremented to 1 before its value is assigned to instanceID.
+ * - instanceID of the current object becomes 1.
+ * - After the operation, songCount is 1.
+*/
+
+/*
+ * Post-Increment Operation:
+ * 
+ * - The current value of songCount (0) is used in the expression and 
+ *   is assigned to instanceID of the current object.
+ * - So, instanceID of the current object becomes 0 (which should've been 1).
+ * - Then, songCount is incremented to 1.
+*/
+```
+
+- Program.cs
+
+```
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading;
+using System.Threading.Tasks;
+
+namespace App1
+{
+    class Program
+    {   
+        static void Main(string[] args)
+        {
+            // static attribute doesn't talk or tell about the objects but rather the class itself.
+            // Anything defined as static is accessed through the class name.
+
+            // When a member of a class is declared as static,
+            // it means that this member belongs to the class,
+            // not to any specific object created from that class.
+
+            // This means there is only one copy of the static member in memory,
+            // regardless of how many instances of the class are created.
+
+            Song song1 = new Song("are u ok?", "VOSZA");
+            Song song2 = new Song("Forget Me Forget You", "Nakani");
+            Song song3 = new Song("NIGHTLIFE", "HXVRMXN");
+            Song song4 = new Song("Labyrinth", "Devilish Trio");
+
+            // For e.g. if we want to know how many songs are there in Song class
+            // We can create a static variable and set its count to 0
+            // and then increment the value each time an object is created.
+
+            // Console.WriteLine("Total Songs: " + Song.songCount);
+            Console.WriteLine($"Total Songs: {Song.songCount}");
+            
+            // Logic behind this has been discussed in Song.cs
+            Console.WriteLine($"Song Count for {song2.artist} is {song2.getSongCount()}");
+            Console.WriteLine($"Song Count for {song4.artist} is {song4.getSongCount()}");
+            Console.WriteLine($"Song Count for {song3.artist} is {song3.getSongCount()}");
+            Console.WriteLine($"Song Count for {song1.artist} is {song1.getSongCount()}");
+
+            Console.ReadLine();
+        }
+    }
+}
+```
