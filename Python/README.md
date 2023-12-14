@@ -1,4 +1,4 @@
-Autodidacticism of Python Programming Language
+# Python Autodidacticism
 
 Contents
   1. Variables
