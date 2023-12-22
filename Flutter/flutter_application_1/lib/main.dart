@@ -70,6 +70,8 @@ class MyApp extends StatelessWidget {
   */
 
   /*
+    SWITCH STATEMENT
+
     Instead of using repetitve if statements, for e.g. a grading system, we can use switch statement.
 
     switch (expression) {
@@ -78,6 +80,23 @@ class MyApp extends StatelessWidget {
         break;
       default:
     }
+  */
+
+  /*
+    LOOPS
+
+    for loops: image you have a box of 10 different colored crayons and you want to draw a circle with each one. 
+
+               Instead of saying, 
+               "Draw a circle with the 1st crayon, then draw a circle with the 2nd crayon, etc...".
+
+               It's much easier to say,
+               "For each crayon in the box, draw a circle".
+
+               for (initialization; condition; iteration) {
+
+               }
+
   */
 
   @override
@@ -140,6 +159,10 @@ class MyApp extends StatelessWidget {
           print("Invalid Grade");
       }
     */
+
+    for (int i = 0; i <= 5; i++) {
+      print(i);
+    }
 
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
