@@ -94,7 +94,9 @@
         }
       ```
       
-- SWITCH STATEMENT: 
+- SWITCH STATEMENT
+  
+  Instead of using repetitive if statements, for e.g. a grading system, a switch statement can be used as better alternative. 
   ```
     // structure
     switch (expression) {
@@ -122,15 +124,10 @@
     }
   ```
 
-
-  /*
-    LOOPS
-
-    for loops: Imagine you have a box of 10 different colored crayons 
-    and you want to draw a circle with each one. Instead of saying, 
-    "Draw a circle with the 1st crayon, then draw a circle with the 
-    2nd crayon, etc...". It's much easier to say, "For each crayon in 
-    the box, draw a circle".
+- LOOPS
+    - FOR loops:
+      
+      Imagine you have a box of 10 different colored crayons and you want to draw a circle with each one. Instead of saying, "Draw a circle with the 1st          crayon, then draw a circle with the 2nd crayon, etc...". It's much easier to say, "For each crayon in the box, draw a circle".
 
     for (initialization; condition; iteration) {
       statement to be executed;
