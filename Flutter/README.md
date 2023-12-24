@@ -215,6 +215,29 @@
     );
   }
   ```
+
+- DATA STRUCTURES
+    - LIST: Unordered collection of elements, can have duplicates.
+      ```
+        List numbers = [1, 2, 3];
+
+        void printNumbers() {
+          for (int i = 0; i < numbers.length; i++) {
+            print(numbers[i]);
+          }
+        }
+
+        // We can also define particular datatypes for LIST. For e.g.
+        List<int> numbers = [1, 2, 3];
+        List<String> names = ["Alex", "Johan", "Tenma"];
+
+        void printNames() {
+          for (int i = 0; i < names.length; i++) {
+            print(names[i]);
+          }
+        }
+      ```
+      
   
 
 ### Everything is a Widget (everything in flutter is a widget)
