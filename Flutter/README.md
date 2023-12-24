@@ -44,7 +44,71 @@
       ```
         !isBeginner -> returns false
       ```
+- CONTROL FLOW
+    - IF statement
+      ```
+        if (condition) {
+          do something
+        }
+      ```
+    - IF ELSE-IF statement
+      ```
+        if (condition) {
+          do something
+        } else if (another condition) {
+          do something else
+        } else {
+          do something else
+        }
+      ```
+    - IF ELSE statement
+      ```
+        if (condition) {
+          do something
+        } else {
+          do something else
+        }
+      ```
 
+  /*
+    SWITCH STATEMENT
+
+    Instead of using repetitve if statements, for e.g. a grading system, we can use switch statement.
+
+    switch (expression) {
+      case value:
+        
+        break;
+      default:
+    }
+  */
+
+  /*
+    LOOPS
+
+    for loops: Imagine you have a box of 10 different colored crayons 
+    and you want to draw a circle with each one. Instead of saying, 
+    "Draw a circle with the 1st crayon, then draw a circle with the 
+    2nd crayon, etc...". It's much easier to say, "For each crayon in 
+    the box, draw a circle".
+
+    for (initialization; condition; iteration) {
+      statement to be executed;
+    }
+
+    while loops: in a for loop, you have to specify the number of times 
+    to loop. If you don't know how many times to loop, you can use a while 
+    loop to keep looping until a certain condition is met
+
+    while ( condition ) {
+      statement to be executed;
+      something here should modify the condition above;
+    }
+
+    break -> break out of loop
+    continue -> skip the current iteration
+
+  */
 
 Everything is a Widget (everything in flutter is a widget)
 Navigation (how to navigate to different screens)
