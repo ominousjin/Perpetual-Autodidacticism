@@ -47,12 +47,19 @@
 - CONTROL FLOW
     - IF statement
       ```
+        // structure
         if (condition) {
           do something
+        }
+
+        // example
+        if (age < 18) {
+          print("Grow Up!!!");
         }
       ```
     - IF ELSE-IF statement
       ```
+        // structure
         if (condition) {
           do something
         } else if (another condition) {
@@ -60,28 +67,61 @@
         } else {
           do something else
         }
+
+        // example
+        if (age < 13) {
+          print("You can only watch G rated movies.");
+        } else if (age < 18) {
+          print("You can only watch G and PG13 rated movies.");
+        } else {
+          print("You can watch G, PG13 and R rated movies.");
+        }
       ```
     - IF ELSE statement
       ```
+        // structure
         if (condition) {
           do something
         } else {
           do something else
         }
+
+        // example
+        if (age >= 18) {
+          print("You are an adult.");
+        } else {
+          print("You are not an adult.");
+        }
       ```
-
-  /*
-    SWITCH STATEMENT
-
-    Instead of using repetitve if statements, for e.g. a grading system, we can use switch statement.
-
+      
+- SWITCH STATEMENT: 
+  ```
+    // structure
     switch (expression) {
       case value:
-        
         break;
       default:
     }
-  */
+
+    // example
+    switch (grade) {
+      case "A":
+        print("Excellent!");
+        break;
+      case "B":
+        print("Good!");
+        break;
+      case "C":
+        print("Fair!");
+        break;
+      case "D":
+        print("Needs Improvement!");
+        break;
+      default:
+        print("Invalid Grade");
+    }
+  ```
+
 
   /*
     LOOPS
