@@ -177,6 +177,45 @@
         countDown--;
       }
       ```
+      
+- FUNCTIONS / METHODS
+  
+  We can write codeblocks to get certain things done. Apparently, we can organize these blocks of code into functions so that we can reuse them easily.
+
+  'void' means that the function returns nothing. They just execute the code in the function.
+
+  ```
+  // basic greet function
+  void greet() {
+    print("Hello!");
+  }
+
+  // function with parameters
+  void greetUser(String name) {
+    print("Hello " + name);
+  }
+
+  // function with return type
+  int add(int a, int b) {
+    int sum = a + b;
+    return sum;
+  }
+
+  @override
+  Widget build(BuildContext context) {
+
+    greet();
+    greetUser("Alex");
+    int mySum = add(3, 5);
+    print(mySum);
+
+    return const MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: Scaffold(),
+    );
+  }
+  ```
+  
 
 ### Everything is a Widget (everything in flutter is a widget)
 ### Navigation (how to navigate to different screens)
