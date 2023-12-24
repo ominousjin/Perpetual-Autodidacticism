@@ -128,23 +128,59 @@
     - FOR loops:
       
       Imagine you have a box of 10 different colored crayons and you want to draw a circle with each one. Instead of saying, "Draw a circle with the 1st          crayon, then draw a circle with the 2nd crayon, etc...". It's much easier to say, "For each crayon in the box, draw a circle".
+      ```
+        // structure
+        for (initialization; condition; iteration) {
+          statement to be executed;
+        }
 
-    for (initialization; condition; iteration) {
-      statement to be executed;
-    }
+        // example 1
+        for (int i = 0; i <= 5; i++) {
+          print(i);
+        }
 
-    while loops: in a for loop, you have to specify the number of times 
-    to loop. If you don't know how many times to loop, you can use a while 
-    loop to keep looping until a certain condition is met
+        // example 2
+        for (int i = 0; i <= 8; i++) {
+          if (i == 6) { // checking condition that breaks the loop when i = 6
+            break;
+          }
+          print(i);
+        }
 
-    while ( condition ) {
-      statement to be executed;
-      something here should modify the condition above;
-    }
+        // example 3
+        for (int i = 0; i <= 8; i++) {
+          if (i == 6) { // 'continue' skips the current iteration i.e. printing 6
+            continue;
+          }
+          print(i);
+        }
 
-    break -> break out of loop
-    continue -> skip the current iteration
+        break -> break out of loop
+        continue -> skip the current iteration
+      ```
+      
+    - WHILE loops:
 
+      In a for loop, you have to specify the number of times to loop. If you don't know how many times to loop, you can use a while loop to keep looping          until a certain condition is met.
+      ```
+      // structure
+      while ( condition ) {
+        statement to be executed;
+        something here should modify the condition above;
+      }
+
+      // example
+      int countDown = 5;
+
+      while (countDown > 0) {
+        print(countDown);
+        countDown--;
+      }
+      ```
+
+    
+
+    
   */
 
 Everything is a Widget (everything in flutter is a widget)
