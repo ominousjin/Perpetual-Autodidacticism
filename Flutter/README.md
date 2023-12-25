@@ -221,6 +221,10 @@
       ```
         List numbers = [1, 2, 3];
 
+        // numbers[0] -> 1
+        // numbers[1] -> 2
+        // numbers[2] -> 3
+
         void printNumbers() {
           for (int i = 0; i < numbers.length; i++) {
             print(numbers[i]);
@@ -231,6 +235,10 @@
         List<int> numbers = [1, 2, 3];
         List<String> names = ["Alex", "Johan", "Tenma"];
 
+        // names[0] -> Alex
+        // names[1] -> Johan
+        // names[3] -> Tenma
+              
         void printNames() {
           for (int i = 0; i < names.length; i++) {
             print(names[i]);
