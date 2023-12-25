@@ -217,7 +217,7 @@
   ```
 
 - DATA STRUCTURES
-    - LIST: Unordered collection of elements, can have duplicates.
+    - LIST: Ordered collection of elements, can have duplicates.
       ```
         List numbers = [1, 2, 3];
 
