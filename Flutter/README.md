@@ -301,9 +301,9 @@
 
         // for decorations
         decoration: BoxDecoration(
-          color: Colors.deepPurple,
-          // for further decorations, we can curver the corners a bit
-          borderRadius: BorderRadius.circular(20),
+            color: Colors.deepPurple,
+            // for further decorations, we can curver the corners a bit
+            borderRadius: BorderRadius.circular(20),
         ),
 
         padding: EdgeInsets.all(25),
@@ -314,7 +314,20 @@
     )
   ```
   
--
+- TEXT
+
+  The Text widget displays a string of text with single style. The string might break across multiple lines or might all be displayed on the same line depending on the layout constraints.
+
+  ```
+    child: Text(
+        "Osamu Dazai",
+        style: TextStyle(
+            color: Colors.white,
+            fontSize: 28,
+            fontWeight: FontWeight.bold,
+    )), // child widget inside container
+  ```
+  
 -
 
 
