@@ -252,9 +252,18 @@
         // for printing the set
         print(uniqueNames);
       ```
-
+    - MAP: stored as key-value pairs
+      ```
+        Map user = {
+          'name': "Alex",
+          'age': 27,
+          'height': 175,
+        };
       
-  
+        // user['name'] -> Alex
+        // user['age'] -> 27
+        // user['height'] -> 175
+      ```
 
 ### Everything is a Widget (everything in flutter is a widget)
 ### Navigation (how to navigate to different screens)
