@@ -328,7 +328,59 @@
     )), // child widget inside container
   ```
   
--
+- What it looks like up until now?
+
+  ```
+  // ignore_for_file: prefer_const_constructors
+
+  import 'package:flutter/material.dart';
+  
+  void main() {
+    runApp(MyApp());
+  }
+  
+  class MyApp extends StatelessWidget {
+    const MyApp({super.key});
+  
+    @override
+    Widget build(BuildContext context) {
+      return MaterialApp(
+        debugShowCheckedModeBanner: false,
+        home: Scaffold(
+          backgroundColor: Colors.deepPurple[200],
+          body: Center(
+            child: Container(
+              height: 300,
+              width: 300,
+  
+              // color cannot be used outside of 'decoration'
+              // color: Colors.deepPurple,
+  
+              // for decorations
+              decoration: BoxDecoration(
+                color: Colors.deepPurple,
+                // for further decorations, we can curver the corners a bit
+                borderRadius: BorderRadius.circular(20),
+              ),
+  
+              padding: EdgeInsets.all(25),
+              // padding: EdgeInsets.symmetric(horizontal: 25, vertical: 50),
+              // padding: EdgeInsets.only(left: 105, top: 70),
+  
+              child: Text("Osamu Dazai",
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 28,
+                    fontWeight: FontWeight.w100,
+                  )), // child widget inside container
+            ), // Container
+          ), // Center
+        ), // Scaffold
+      ); // MaterialApp
+    }
+  }
+  ```
+  ![image](https://github.com/akarsh0913/Perpetual-Autodidacticism/assets/134067749/a90b177e-5c11-432f-9c5e-23735dc0e046)
 
 
 ### Navigation (how to navigate to different screens)
