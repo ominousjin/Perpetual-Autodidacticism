@@ -382,6 +382,18 @@
   ```
   ![image](https://github.com/akarsh0913/Perpetual-Autodidacticism/assets/134067749/a90b177e-5c11-432f-9c5e-23735dc0e046)
 
+- ICONS
+
+  ```
+    child: Icon(
+                Icons.logout,
+                color: Colors.white,
+                size: 64,
+              )),
+  ```
+  
+  ![image](https://github.com/akarsh0913/Perpetual-Autodidacticism/assets/134067749/f6365517-336b-4b88-b714-5f9e078d6421)
+
 
 ### Navigation (how to navigate to different screens)
 ### Stateless vs Stateful Widgets
