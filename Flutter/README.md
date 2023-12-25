@@ -386,10 +386,10 @@
 
   ```
     child: Icon(
-                Icons.logout,
-                color: Colors.white,
-                size: 64,
-              )),
+        Icons.logout,
+        color: Colors.white,
+        size: 64,
+    )),
   ```
   
   ![image](https://github.com/akarsh0913/Perpetual-Autodidacticism/assets/134067749/f6365517-336b-4b88-b714-5f9e078d6421)
