@@ -265,7 +265,59 @@
         // user['height'] -> 175
       ```
 
-### Everything is a Widget (everything in flutter is a widget)
+### Everything is a Widget in Flutter
+
+- DEBUG BANNER
+  
+  This banner is intended to deter people from complaining that your app is slow when it's in debug mode. In debug mode, Flutter enables a large number of expensive diagnostics to aid in development, and so performance in debug mode is not representative of what will happen in release mode.
+
+  ```
+    debugShowCheckedModeBanner: false
+  ```
+  
+- SCAFFOLD
+
+  Implements the basic Material Design visual layout structure.
+
+  ```
+    home: Scaffold(
+        backgroundColor: Colors.deepPurple[200],
+        // contains other properties as well 
+    )
+  ```
+  
+- CONTAINER
+
+  While, scaffolding will alter the appearance and feel of Material on screen. A basic/common widget in Flutter called a container will hold other widgets.
+
+  ```
+    body: Center(
+        child: Container(
+        height: 300,
+        width: 300,
+
+        // color cannot be used outside of 'decoration'
+        // color: Colors.deepPurple,
+
+        // for decorations
+        decoration: BoxDecoration(
+          color: Colors.deepPurple,
+          // for further decorations, we can curver the corners a bit
+          borderRadius: BorderRadius.circular(20),
+        ),
+
+        padding: EdgeInsets.all(25),
+        // padding: EdgeInsets.symmetric(horizontal: 25, vertical: 50),
+        // padding: EdgeInsets.only(left: 105, top: 70),
+
+        child: Text("Osamu Dazai"), // child widget inside container
+    )
+  ```
+  
+-
+-
+
+
 ### Navigation (how to navigate to different screens)
 ### Stateless vs Stateful Widgets
 ### User Input
