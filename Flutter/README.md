@@ -161,7 +161,7 @@
       
     - WHILE loops:
 
-      In a for loop, you have to specify the number of times to loop. If you don't know how many times to loop, you can use a while loop to keep looping          until a certain condition is met.
+      In a for loop, you have to specify the number of times to loop. If you don't know how many times to loop, you can use a while loop to keep looping until a certain condition is met.
       ```
       // structure
       while ( condition ) {
