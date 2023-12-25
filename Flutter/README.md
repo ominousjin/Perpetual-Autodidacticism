@@ -245,6 +245,14 @@
           }
         }
       ```
+    - SET - Unordered collection of unique elements
+      ```
+        Set<String> uniqueNames = {"Dazai", "Ango", "Odasaku"};
+      
+        // for printing the set
+        print(uniqueNames);
+      ```
+
       
   
 
