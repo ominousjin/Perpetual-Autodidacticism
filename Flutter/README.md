@@ -412,7 +412,7 @@
               ]),
   ```
 
-- COLUMNS/ROWS
+- COLUMN / ROW
 
   ```
     body: Column(
