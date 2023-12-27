@@ -652,6 +652,30 @@
 
   ![image](https://github.com/akarsh0913/Perpetual-Autodidacticism/assets/134067749/166118a9-591c-4e33-ae31-dda3815a9e93)
 
+- GESTURE DETECTOR
+
+  ```
+    body: Center(
+              child: GestureDetector(
+                // detects gestures from user
+
+                /*
+                onTap: () {
+                  print("User Tapped");
+                },
+                */
+
+                onTap: userTapped,
+                child: Container(
+                  height: 300,
+                  width: 300,
+                  color: Colors.deepPurple[200],
+                  child: Center(child: Text("Tap Me!")),
+                ),
+              ),
+            )
+  ```
+  
 ### Navigation (how to navigate to different screens)
 ### Stateless vs Stateful Widgets
 ### User Input
