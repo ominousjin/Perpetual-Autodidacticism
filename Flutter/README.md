@@ -2,7 +2,7 @@
 
 ### Programming Fundamentals
 
-- Variables allow to store different types of information.
+- #### Variables allow to store different types of information.
   ```
     String name = "Sebastian";
     int age = 21;
@@ -10,7 +10,7 @@
     bool isBeginner = true;
   ```
 
-- BASIC MATH OPERATORS
+- #### BASIC MATH OPERATORS
   ```
     4 + 4 = 8, add
     5 - 3 = 2, subtract
@@ -21,7 +21,7 @@
     --, decrement by one
   ```
 
-- COMPARISON OPERATORS
+- #### COMPARISON OPERATORS
   ```
     5 == 5 -> true,   EQUAL TO
     2 != 3 -> true,   NOT EQUAL TO
@@ -31,16 +31,16 @@
     3 <= 7 -> true,   LESS OR EQUAL TO 
   ```
 
-- LOGICAL OPERATORS
-    - AND operator, returns true if both sides are true
+- #### LOGICAL OPERATORS
+    - ##### AND operator, returns true if both sides are true
       ```
         isBeginner && ( age < 18 ) -> returns false
       ```
-    - OR operator, returns true if at least one side is true
+    - ##### OR operator, returns true if at least one side is true
       ```
         isBeginner || ( age < 18 ) -> returns true
       ```
-    - NOT operator, returns the opposite value
+    - ##### NOT operator, returns the opposite value
       ```
         !isBeginner -> returns false
       ```
