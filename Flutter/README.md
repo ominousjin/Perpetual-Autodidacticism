@@ -602,6 +602,23 @@
             )
   ```
 
+- GridView.builder()
+
+  ```
+    body: GridView.builder(
+                itemCount: 200,
+                gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                    crossAxisCount: 8),
+                itemBuilder: (context, index) => Container(
+                      color: Colors.deepPurple,
+                      margin: EdgeInsets.all(2),
+                )
+            )
+  ```
+  
+  ![image](https://github.com/akarsh0913/Perpetual-Autodidacticism/assets/134067749/0e0f2238-fa63-4fe3-8925-6863bf4a8419)
+
+
 
 ### Navigation (how to navigate to different screens)
 ### Stateless vs Stateful Widgets
