@@ -537,6 +537,48 @@
           ),
   ```
 
+- LISTVIEW
+
+  ```
+    body: ListView(
+
+            // -----------------------------------------------------------------
+
+            // If the widget size is quite large, it is probable
+            // ithat t might not fit all on the screen. This is
+            // labelled as more of an overflow problem.
+
+            // To counter this, we can use LISTVIEW instead of
+            // COLUMN / ROW
+
+            // -----------------------------------------------------------------
+
+            // LISTVIEW is same as COLUMN / ROW but it also allows
+            // to scroll, which means all of the children will fit.
+
+            // -----------------------------------------------------------------
+
+            // We can also control the scroll direction, which is
+            // vertical, by default.
+
+            // -----------------------------------------------------------------
+
+            // for horizontal
+
+            /*
+            scrollDirection: Axis.horizontal,
+            children: [
+              Container(width: 500, color: Colors.deepPurple),
+              Container(width: 500, color: Colors.deepPurple[400]),
+              Container(width: 500, color: Colors.deepPurple[200]),
+            ],
+            */
+
+            // -----------------------------------------------------------------
+
+          ),
+  ```
+
 
 ### Navigation (how to navigate to different screens)
 ### Stateless vs Stateful Widgets
