@@ -133,7 +133,7 @@
   ```
 
 - #### LOOPS
-    - ##### FOR loops:
+    - ##### FOR loop
       
       Imagine you have a box of 10 different colored crayons and you want to draw a circle with each one. Instead of saying, "Draw a circle with the 1st          crayon, then draw a circle with the 2nd crayon, etc...". It's much easier to say, "For each crayon in the box, draw a circle".
       ```
@@ -167,9 +167,9 @@
         continue -> skip the current iteration
       ```
       
-    - ##### WHILE loops:
+    - ##### WHILE loop
 
-      In a for loop, you have to specify the number of times to loop. If you don't know how many times to loop, you can use a while loop to keep looping until a certain condition is met.
+      In a for loop, you have to specify the number of times to loop. If you don't know how many times to loop, you can use a while loop to keep looping          until a certain condition is met.
       ```
       // structure
       while ( condition ) {
