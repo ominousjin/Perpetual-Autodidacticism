@@ -2,7 +2,8 @@
 
 ### Programming Fundamentals
 
-- #### Variables allow to store different types of information.
+- #### VARIABLES
+  Variables allow to store different types of information.
   ```
     String name = "Sebastian";
     int age = 21;
@@ -32,15 +33,18 @@
   ```
 
 - #### LOGICAL OPERATORS
-    - ##### AND operator, returns true if both sides are true
+    - ##### AND operator
+      returns true if both sides are true
       ```
         isBeginner && ( age < 18 ) -> returns false
       ```
-    - ##### OR operator, returns true if at least one side is true
+    - ##### OR operator
+      returns true if at least one side is true
       ```
         isBeginner || ( age < 18 ) -> returns true
       ```
-    - ##### NOT operator, returns the opposite value
+    - ##### NOT operator
+      returns the opposite value
       ```
         !isBeginner -> returns false
       ```
