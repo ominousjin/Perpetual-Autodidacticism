@@ -394,6 +394,149 @@
   
   ![image](https://github.com/akarsh0913/Perpetual-Autodidacticism/assets/134067749/f6365517-336b-4b88-b714-5f9e078d6421)
 
+- APPBAR
+
+  ```
+    appBar: AppBar(
+              title: Text("My App Bar",
+                  style: TextStyle(
+                    color: Colors.white,
+                  )),
+              backgroundColor: Colors.black,
+              elevation: 0,
+              leading: Icon(Icons.menu, color: Colors.white),
+              actions: [
+                IconButton(
+                    onPressed: () {},
+                    icon: Icon(Icons.logout, color: Colors.white))
+              ]),
+  ```
+
+- COLUMNS/ROWS
+
+  ```
+    body: Column(
+
+            // -----------------------------------------------------------------
+
+            // for column -> Column()
+            // for row -> Row()
+
+            // -----------------------------------------------------------------
+
+            // mainAxisAlignment vs crossAxisAlignment
+
+            /*
+            When you use a Row, its children are laid out in a row, 
+            which is horizontally. So a Row's main axis is horizontal. 
+            Using mainAxisAlignment in a Row lets you align the row's 
+            children horizontally (e.g. left, right). The cross axis to 
+            a Row's main axis is vertical. So using crossAxisAlignment 
+            in a Row lets you define, how its children are aligned 
+            vertically.
+            
+            In a Column, it's the opposite. The children of a column are 
+            laid out vertically, from top to bottom (per default). So its 
+            main axis is vertical. This means, using mainAxisAlignment in 
+            a Column aligns its children vertically (e.g. top, bottom) and 
+            crossAxisAlignment defines how the children are aligned 
+            horizontally in that Column.
+            */
+
+            // -----------------------------------------------------------------
+
+            // mainAxisAlignment: MainAxisAlignment.center,
+            // mainAxisAlignment: MainAxisAlignment.end,
+            // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            // mainAxisAlignment: MainAxisAlignment.spaceBetween,
+
+            /*
+            children: [
+              Container(height: 200, width: 200, color: Colors.deepPurple),
+              Container(height: 200, width: 200, color: Colors.deepPurple[400]),
+              Container(height: 200, width: 200, color: Colors.deepPurple[600]),
+            ],
+            */
+
+            // -----------------------------------------------------------------
+
+            // crossAxisAlignment: CrossAxisAlignment.start,
+            // crossAxisAlignment: CrossAxisAlignment.end,
+            // crossAxisAlignment: CrossAxisAlignment.center,
+
+            /*
+            children: [
+              Container(height: 300, width: 300, color: Colors.deepPurple),
+              Container(height: 200, width: 200, color: Colors.deepPurple[400]),
+              Container(height: 100, width: 100, color: Colors.deepPurple[200]),
+            ],
+            */
+
+            // -----------------------------------------------------------------
+
+            // Expanded Class
+
+            /*
+            Using an Expanded widget makes a child of a Row, Column, 
+            or Flex expand to fill the available space along the main 
+            axis (e.g., horizontally for a Row or vertically for a Column). 
+            If multiple children are expanded, the available space is divided 
+            among them according to the flex factor.
+            */
+
+            // Expanding only one child
+
+            /*
+            children: [
+              Container(height: 200, width: 200, color: Colors.deepPurple),
+              Container(height: 200, width: 200, color: Colors.deepPurple[400]),
+              Expanded(
+                  child: Container(width: 200, color: Colors.deepPurple[200])),
+            ],
+            */
+
+            // Expamding all the child
+
+            /*
+            children: [
+              Expanded(child: Container(width: 200, color: Colors.deepPurple)),
+              Expanded(
+                  child: Container(width: 200, color: Colors.deepPurple[400])),
+              Expanded(
+                  child: Container(width: 200, color: Colors.deepPurple[200])),
+            ],
+            */
+
+            // If there is no height or width,
+            // screen is divided in equal sections.
+
+            /*
+            children: [
+              Expanded(child: Container(color: Colors.deepPurple)),
+              Expanded(child: Container(color: Colors.deepPurple[400])),
+              Expanded(child: Container(color: Colors.deepPurple[200])),
+            ],
+            */
+
+            // Using flex property
+
+            // --> Initial value is 1
+
+            // flex tells the ration of current widget
+            // in comparison to the other widgets
+
+            children: [
+              Expanded(child: Container(color: Colors.deepPurple)),
+              Expanded(
+                  flex: 2, child: Container(color: Colors.deepPurple[400])),
+              Expanded(child: Container(color: Colors.deepPurple[200])),
+            ],
+
+            // -----------------------------------------------------------------
+            
+          ),
+  ```
+
 
 ### Navigation (how to navigate to different screens)
 ### Stateless vs Stateful Widgets
