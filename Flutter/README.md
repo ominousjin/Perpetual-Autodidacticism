@@ -545,7 +545,7 @@
             // -----------------------------------------------------------------
 
             // If the widget size is quite large, it is probable
-            // ithat t might not fit all on the screen. This is
+            // that it might not fit all on the screen. This is
             // labelled as more of an overflow problem.
 
             // To counter this, we can use LISTVIEW instead of
