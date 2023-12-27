@@ -579,6 +579,23 @@
           ),
   ```
 
+- ListView.builder()
+
+  ```
+    body: ListView.builder(
+
+              /*
+              The standard ListView constructor works well for small lists. 
+              To work with lists that contain a large number of items, 
+              it’s best to use the ListView.builder constructor.
+              */ 
+
+              itemCount: 100,
+              itemBuilder: (context, index) =>
+                  ListTile(title: Text(index.toString())),
+            )
+  ```
+
 
 ### Navigation (how to navigate to different screens)
 ### Stateless vs Stateful Widgets
