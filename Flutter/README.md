@@ -618,7 +618,39 @@
   
   ![image](https://github.com/akarsh0913/Perpetual-Autodidacticism/assets/134067749/0e0f2238-fa63-4fe3-8925-6863bf4a8419)
 
+- STACK
 
+  ```
+    body: Center(
+              child: Stack(
+                // stacks different widgets on top of each other
+                //alignment: Alignment.center,
+                //alignment: Alignment.bottomRight,
+                children: [
+                  // big box
+                  Container(
+                    height: 300,
+                    width: 300,
+                    color: Colors.deepPurple,
+                  ),
+                  // medium box
+                  Container(
+                    height: 200,
+                    width: 200,
+                    color: Colors.deepPurple[400],
+                  ),
+                  // small box
+                  Container(
+                    height: 100,
+                    width: 100,
+                    color: Colors.deepPurple[100],
+                  ),
+                ],
+              ),
+            )
+  ```
+
+  ![image](https://github.com/akarsh0913/Perpetual-Autodidacticism/assets/134067749/166118a9-591c-4e33-ae31-dda3815a9e93)
 
 ### Navigation (how to navigate to different screens)
 ### Stateless vs Stateful Widgets
