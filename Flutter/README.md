@@ -675,6 +675,9 @@
               ),
             )
   ```
+
+  ![image](https://github.com/akarsh0913/Perpetual-Autodidacticism/assets/134067749/dd490603-b705-4b74-9fea-6283ca5f4864)
+
   
 ### Navigation (how to navigate to different screens)
 ### Stateless vs Stateful Widgets
