@@ -2,9 +2,7 @@
 
 ### Programming Fundamentals
 
-- #### VARIABLES
-  
-  Variables allow to store different types of information.
+- Variables allow to store different types of information.
   ```
     String name = "Sebastian";
     int age = 21;
@@ -12,7 +10,7 @@
     bool isBeginner = true;
   ```
 
-- #### BASIC MATH OPERATORS
+- BASIC MATH OPERATORS
   ```
     4 + 4 = 8, add
     5 - 3 = 2, subtract
@@ -23,7 +21,7 @@
     --, decrement by one
   ```
 
-- #### COMPARISON OPERATORS
+- COMPARISON OPERATORS
   ```
     5 == 5 -> true,   EQUAL TO
     2 != 3 -> true,   NOT EQUAL TO
@@ -33,27 +31,21 @@
     3 <= 7 -> true,   LESS OR EQUAL TO 
   ```
 
-- #### LOGICAL OPERATORS
-    - ##### AND operator
-      
-      returns true if both sides are true
+- LOGICAL OPERATORS
+    - AND operator, returns true if both sides are true
       ```
         isBeginner && ( age < 18 ) -> returns false
       ```
-    - ##### OR operator
-      
-      returns true if at least one side is true
+    - OR operator, returns true if at least one side is true
       ```
         isBeginner || ( age < 18 ) -> returns true
       ```
-    - ##### NOT operator
-      
-      returns the opposite value
+    - NOT operator, returns the opposite value
       ```
         !isBeginner -> returns false
       ```
-- #### CONTROL FLOW
-    - #### IF statement
+- CONTROL FLOW
+    - IF statement
       ```
         // structure
         if (condition) {
@@ -65,7 +57,7 @@
           print("Grow Up!!!");
         }
       ```
-    - #### IF ELSE-IF statement
+    - IF ELSE-IF statement
       ```
         // structure
         if (condition) {
@@ -85,7 +77,7 @@
           print("You can watch G, PG13 and R rated movies.");
         }
       ```
-    - #### IF ELSE statement
+    - IF ELSE statement
       ```
         // structure
         if (condition) {
@@ -102,7 +94,7 @@
         }
       ```
       
-- #### SWITCH STATEMENT
+- SWITCH STATEMENT
   
   Instead of using repetitive if statements, for e.g. a grading system, a switch statement can be used as better alternative. 
   ```
@@ -132,8 +124,8 @@
     }
   ```
 
-- #### LOOPS
-    - ##### FOR loop
+- LOOPS
+    - FOR loop
       
       Imagine you have a box of 10 different colored crayons and you want to draw a circle with each one. Instead of saying, "Draw a circle with the 1st          crayon, then draw a circle with the 2nd crayon, etc...". It's much easier to say, "For each crayon in the box, draw a circle".
       ```
@@ -167,7 +159,7 @@
         continue -> skip the current iteration
       ```
       
-    - ##### WHILE loop
+    - WHILE loop
 
       In a for loop, you have to specify the number of times to loop. If you don't know how many times to loop, you can use a while loop to keep looping          until a certain condition is met.
       ```
@@ -186,7 +178,7 @@
       }
       ```
       
-- #### FUNCTIONS / METHODS
+- FUNCTIONS / METHODS
   
   We can write codeblocks to get certain things done. Apparently, we can organize these blocks of code into functions so that we can reuse them easily.
 
@@ -224,8 +216,8 @@
   }
   ```
 
-- #### DATA STRUCTURES
-    - ##### LIST
+- DATA STRUCTURES
+    - LIST
 
       Ordered collection of elements, can have duplicates.
       ```
@@ -255,7 +247,7 @@
           }
         }
       ```
-    - ##### SET
+    - SET
 
       Unordered collection of unique elements
       ```
@@ -264,7 +256,7 @@
         // for printing the set
         print(uniqueNames);
       ```
-    - ##### MAP
+    - MAP
 
       Stored as key-value pairs
       ```
