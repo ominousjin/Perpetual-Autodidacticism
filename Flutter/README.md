@@ -52,8 +52,8 @@
       ```
         !isBeginner -> returns false
       ```
-- CONTROL FLOW
-    - IF statement
+- #### CONTROL FLOW
+    - #### IF statement
       ```
         // structure
         if (condition) {
@@ -65,7 +65,7 @@
           print("Grow Up!!!");
         }
       ```
-    - IF ELSE-IF statement
+    - #### IF ELSE-IF statement
       ```
         // structure
         if (condition) {
@@ -85,7 +85,7 @@
           print("You can watch G, PG13 and R rated movies.");
         }
       ```
-    - IF ELSE statement
+    - #### IF ELSE statement
       ```
         // structure
         if (condition) {
@@ -102,7 +102,7 @@
         }
       ```
       
-- SWITCH STATEMENT
+- #### SWITCH STATEMENT
   
   Instead of using repetitive if statements, for e.g. a grading system, a switch statement can be used as better alternative. 
   ```
@@ -132,8 +132,8 @@
     }
   ```
 
-- LOOPS
-    - FOR loops:
+- #### LOOPS
+    - ##### FOR loops:
       
       Imagine you have a box of 10 different colored crayons and you want to draw a circle with each one. Instead of saying, "Draw a circle with the 1st          crayon, then draw a circle with the 2nd crayon, etc...". It's much easier to say, "For each crayon in the box, draw a circle".
       ```
@@ -167,7 +167,7 @@
         continue -> skip the current iteration
       ```
       
-    - WHILE loops:
+    - ##### WHILE loops:
 
       In a for loop, you have to specify the number of times to loop. If you don't know how many times to loop, you can use a while loop to keep looping until a certain condition is met.
       ```
@@ -186,7 +186,7 @@
       }
       ```
       
-- FUNCTIONS / METHODS
+- #### FUNCTIONS / METHODS
   
   We can write codeblocks to get certain things done. Apparently, we can organize these blocks of code into functions so that we can reuse them easily.
 
@@ -224,8 +224,10 @@
   }
   ```
 
-- DATA STRUCTURES
-    - LIST: Ordered collection of elements, can have duplicates.
+- #### DATA STRUCTURES
+    - ##### LIST
+
+      Ordered collection of elements, can have duplicates.
       ```
         List numbers = [1, 2, 3];
 
@@ -253,14 +255,18 @@
           }
         }
       ```
-    - SET - Unordered collection of unique elements
+    - ##### SET
+
+      Unordered collection of unique elements
       ```
         Set<String> uniqueNames = {"Dazai", "Ango", "Odasaku"};
       
         // for printing the set
         print(uniqueNames);
       ```
-    - MAP: stored as key-value pairs
+    - ##### MAP
+
+      Stored as key-value pairs
       ```
         Map user = {
           'name': "Alex",
