@@ -15,5 +15,7 @@
     <li><a href="https://github.com/akarsh0913/Perpetual-Autodidacticism/tree/main/JavaScript" target="_blank">JavaScript</a></li>
     <li><a href="https://github.com/akarsh0913/Perpetual-Autodidacticism/tree/main/Python" target="_blank">Python</a></li>
   </ul>
+  <li>Frameworks</li>
+  <li><a href="https://github.com/akarsh0913/Perpetual-Autodidacticism/tree/main/Flutter" target="_blank">Flutter</a></li>
 </ol>
 
