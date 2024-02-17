@@ -25,15 +25,15 @@ c = conn.cursor()
 # inside .execute(), wrap SQL commands inside three quotes on each side
 # this is also referred to as docstrings (as in Python documentation)
 
-c.execute(
- 	"""CREATE TABLE employees (
- 		first text,
- 		last text,
- 		pay integer
- 	)"""
-)
+# c.execute(
+#  	"""CREATE TABLE employees (
+#  		first text,
+#  		last text,
+#  		pay integer
+#  	)"""
+# )
 
-# the above code might be commented out because the table has been already created
+# the above code is commented out because the table has been already created
 # running that codeblock again will give back an operational error
 # i.e. sqlite3.OperationalError: table employees already exists
 
