@@ -51,19 +51,6 @@ c.execute(
 #  	)"""
 # )
 
-# some functions for protoyping a simple SQL application
-def insert_emp(emp):
-	pass
-
-def get_emps_by_name(lastname):
-	pass
-
-def update_pay(emp, pay):
-	pass
-
-def remove_emp(emp):
-	pass
-
 # adding an employee to the database
 c.execute("INSERT INTO employees VALUES ('Jax', 'Teller', 100000)")
 c.execute("INSERT INTO employees VALUES ('Gemma', 'Teller', 200000)")
