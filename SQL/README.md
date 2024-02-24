@@ -49,11 +49,6 @@ SQL or Structured Query Language is a query programming language for managing RD
    A table in a RDBMS consist of rows and columns, like an Excel spreadsheet.
 
 7. Creating a table
-   
-   - Syntax: `CREATE TABLE <table-name> ();`
-   - Within parenthesis, we will list the columns (or attributes).
-   - Each column is followed by its respective data type.
-   - Each column is separated by a comma.
 
    ```
    CREATE TABLE employees (
@@ -64,6 +59,11 @@ SQL or Structured Query Language is a query programming language for managing RD
        hire_date DATE
    );
    ```
+   
+   - Syntax: `CREATE TABLE <table-name> ();`
+   - Within parenthesis, we will list the columns (or attributes).
+   - Each column is followed by its respective data type.
+   - Each column is separated by a comma.
 
 8. Selecting a table
 
