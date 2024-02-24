@@ -143,5 +143,68 @@ SQL or Structured Query Language is a query programming language for managing RD
       DROP COLUMN email;
       ```
 
+12. Inserting a row into the table
+
+    - Syntax:
+
+      ```
+      INSERT INTO <table-name>
+      VALUES (value_1, value_2, value_3, ...);
+      ```
+
+    - Example:
+
+      ```
+      INSERT INTO employees
+      VALUES (1, "Eugene", "Krabs", 25.50, "2023-01-02");
+      ```
+
+      Date format: `YYYY-MM-DD`
+
+13. Inserting multiple rows into the table
+   
+    - Syntax: 
+
+      ```
+      INSERT INTO employees
+      VALUES (), (), (), ();
+      ```
+
+      <i><ins>Note:</ins> Number of brackets are equivalent to number of rows that you want to insert.</i>
+
+    - Example: 
+
+      ```
+      INSERT INTO employees
+      VALUES (2, "Squidward", "Tentacles", 21.99, "2023-03-04"),
+             (3, "Spongebob", "Squarepants", 22.67, "2022-05-06"),
+             (4, "Patrick", "Star", 26.42, "2021-07-08"),
+             (5, "Sandy", "Cheeks", 29.82, "2020-09-12");
+      ```
+
+14. Inserting row with "missing" data
+
+    ```
+    INSERT INTO employees
+    VALUES (6, "Sandy", "Cheeks");
+    ```
+
+    Results in `Error Code: 1136. Column count doesn't match value count at row 1`.
+
+    One way to deal with it is to add to only selected columns.
+
+    Example:
+
+    ```
+    INSERT INTO employees (employee_id, first_name, last_name)
+    VALUES (6, "Sandy", "Cheeks");
+    ```
+
+
+
+      
+
+
+
 
 
