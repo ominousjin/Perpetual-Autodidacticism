@@ -277,3 +277,15 @@ SQL or Structured Query Language is a query programming language for managing RD
       FROM employees
       WHERE employee_id != 1;
       ```
+
+    - Selecting rows which have `NULL` values
+
+      Use `IS NULL` with `WHERE` clause.
+
+      ```
+      SELECT *
+      FROM employees
+      WHERE hire_date IS NULL;
+      ```
+
+      <i><ins>Note:</ins> Contrary usage --> `IS NOT NULL`</i>
