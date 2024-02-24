@@ -67,6 +67,8 @@ SQL or Structured Query Language is a query programming language for managing RD
 
 8. Selecting a table
 
+   `SELECT` is also used for querying.
+
    ```
    SELECT * FROM employees;
    ```
