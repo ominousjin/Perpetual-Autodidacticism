@@ -191,7 +191,7 @@ SQL or Structured Query Language is a query programming language for managing RD
 
     Results in `Error Code: 1136. Column count doesn't match value count at row 1`.
 
-    One way to deal with it is to add to only selected columns.
+    One way to deal with it is to add data to only selected columns.
 
     Example:
 
