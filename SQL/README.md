@@ -25,3 +25,21 @@ SQL or Structured Query Language is a query programming language for managing RD
    ```
    DROP DATABASE myDB;
    ```
+
+5. Altering a database
+
+   - Setting database to read only:
+
+     If the database is in read-only mode, we can't make any modifications to it but we can still access the data within.
+
+     ```
+     ALTER DATABASE myDB READ ONLY = 1;
+     ```
+
+     In this case, let's say we tried to drop the database. This will return `Error Code: 3989. Schema 'mydb' is in read only mode.` as the database has been set to read only.
+
+   - Enabling encryption:
+
+     ```
+
+     ```
