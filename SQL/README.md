@@ -77,4 +77,4 @@ SQL or Structured Query Language is a query programming language for managing RD
    RENAME TABLE employees to workers;
    ```
 
-   <i>Use `RENAME TABLE workers TO employees;` to revert back.</i> 
+   <i><ins>Note:</ins> use `RENAME TABLE workers TO employees;` to revert back.</i> 
