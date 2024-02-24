@@ -199,12 +199,3 @@ SQL or Structured Query Language is a query programming language for managing RD
     INSERT INTO employees (employee_id, first_name, last_name)
     VALUES (6, "Sandy", "Cheeks");
     ```
-
-
-
-      
-
-
-
-
-
