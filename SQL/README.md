@@ -84,3 +84,12 @@ SQL or Structured Query Language is a query programming language for managing RD
     ```
     DROP TABLE employees;
     ```
+
+11. Altering a table
+
+    We can use `ALTER` and `ADD` to edit/alter the table to add a new column i.e. `phone_number`.
+
+    ```
+    ALTER TABLE employees
+    ADD phone_number VARCHAR(15);
+    ```
