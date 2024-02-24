@@ -81,6 +81,6 @@ SQL or Structured Query Language is a query programming language for managing RD
 
 10. Deleting a table
 
-   ```
-   DROP TABLE employees;
-   ```
+    ```
+    DROP TABLE employees;
+    ```
