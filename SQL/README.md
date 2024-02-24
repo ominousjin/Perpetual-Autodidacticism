@@ -89,9 +89,59 @@ SQL or Structured Query Language is a query programming language for managing RD
 
 11. Altering a table
 
-    We can use `ALTER` and `ADD` to edit/alter the table to add a new column i.e. `phone_number`.
+    We can use `ALTER` to edit/alter the table.
 
-    ```
-    ALTER TABLE employees
-    ADD phone_number VARCHAR(15);
-    ```
+    - Adding a column:
+
+      `ADD` to add a new column i.e. `phone_number`.
+
+      ```
+      ALTER TABLE employees
+      ADD phone_number VARCHAR(15);
+      ```
+    - Renaming a column:
+
+      `RENAME COLUMN <old-name> TO <new-name>` to rename column.
+
+      ```
+      ALTER TABLE employees
+      RENAME COLUMN phone_number TO email;
+      ```
+
+    - Modifying a column:
+
+      `MODIFY COLUMN <column-name> <data-type>` to modify datatype of a column.
+
+      ```
+      ALTER TABLE employees
+      MODIFY COLUMN email VARCHAR(100);
+      ```
+
+    - Changing position of a column:
+
+      `AFTER` to change position of a column.
+
+      ```
+      ALTER TABLE employees
+      MODIFY COLUMN email VARCHAR(100)
+      AFTER last_name;
+      ```
+    - Changing position of a column to first:
+
+      `FIRST` to change position of a column to first.
+
+      ```
+      ALTER TABLE employees
+      MODIFY COLUMN email VARCHAR(100)
+      FIRST;
+      ```
+
+    - Deleting a column:
+
+      ```
+      ALTER TABLE employees
+      DROP COLUMN email;
+      ```
+
+
+
