@@ -166,7 +166,7 @@ SQL or Structured Query Language is a query programming language for managing RD
     - Syntax: 
 
       ```
-      INSERT INTO employees
+      INSERT INTO <table-name>
       VALUES (), (), (), ();
       ```
 
@@ -186,7 +186,7 @@ SQL or Structured Query Language is a query programming language for managing RD
 
     ```
     INSERT INTO employees
-    VALUES (6, "Sandy", "Cheeks");
+    VALUES (6, "Sheldon", "Plankton");
     ```
 
     Results in `Error Code: 1136. Column count doesn't match value count at row 1`.
@@ -197,5 +197,83 @@ SQL or Structured Query Language is a query programming language for managing RD
 
     ```
     INSERT INTO employees (employee_id, first_name, last_name)
-    VALUES (6, "Sandy", "Cheeks");
+    VALUES (6, "Sheldon", "Plankton");
     ```
+
+15. SELECT STATEMENT
+
+    `SELECT` statement is used to query data.
+
+    - Use `*` to select all columns.
+
+      ```
+      SELECT * FROM employees;
+      ```
+
+    - Use specific column names to select particular columns.
+
+      ```
+      SELECT first_name, last_name 
+      FROM employees;
+      ```
+
+    - Changing order of columns:
+
+      ```
+      SELECT hire_date, first_name, last_name 
+      FROM employees;
+      ```
+
+    - WHERE Clause:
+
+      Use `WHERE` clause when you are looking for something specific.
+
+      - Syntax:
+
+        ```
+        SELECT *
+        FROM <table-name>
+        WHERE <condition>;
+        ```
+
+      - Example 1:
+
+        ```
+        SELECT *
+        FROM employees
+        WHERE employee_id = 1;
+        ```
+
+      - Example 2:
+
+        ```
+        SELECT *
+        FROM employees
+        WHERE first_name = "Spongebob";
+        ```
+
+      - Example 3:
+
+        ```
+        SELECT *
+        FROM employees
+        WHERE hourly_pay >= 25;
+        ```
+
+      - Example 4:
+
+        ```
+        SELECT *
+        FROM employees
+        WHERE hire_date <= "2023-01-03";
+        ```
+
+    - NOT COMPARISON OPERATOR (not equal)
+
+      OPERATOR --> `!=`
+
+      ```
+      SELECT *
+      FROM employees
+      WHERE employee_id != 1;
+      ```
