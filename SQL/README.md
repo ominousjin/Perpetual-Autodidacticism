@@ -1,6 +1,6 @@
 # SQL
 
-SQL is a query programming language for managing RDBMS i.e. Relational Database Management System).
+SQL or Structured Query Language is a query programming language for managing RDBMS i.e. Relational Database Management System).
 
 1. Database 
 
