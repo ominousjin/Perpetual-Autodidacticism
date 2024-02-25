@@ -338,8 +338,8 @@ SQL or Structured Query Language is a query programming language for managing RD
 
 18. `AUTOCOMMIT`, `COMMIT`, and `ROLLBACK`
     
-    - Autocommit is a feature in database systems where each SQL statement is automatically committed immediately after it is executed. This means that each individual SQL statement is treated as a transaction by itself, and it is automatically committed to the database. 
+    - Autocommit is a feature in database systems where each SQL statement is automatically committed immediately after it is executed. This means that each individual SQL statement is treated as a transaction by itself, and it is automatically committed to the database. It can be turned off using `SET AUTOCOMMIT = OFF;`.
 
-    - Commit is an SQL statement that finalizes the changes made in a transaction and makes those changes permanent in the database. When you issue a commit statement, all the changes made within the transaction are saved to the database. 
+    - Commit is an SQL statement that finalizes the changes made in a transaction and makes those changes permanent in the database. When you issue a commit statement, all the changes made within the transaction are saved to the database. Syntax: `COMMIT;`.
 
-    - Rollback is an SQL statement that undoes the changes made in the current transaction and restores the database to its state before the transaction began.
+    - Rollback is an SQL statement that undoes the changes made in the current transaction and restores the database to its state before the transaction began. Syntax: `ROLLBACK;`.
