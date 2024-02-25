@@ -288,4 +288,4 @@ SQL or Structured Query Language is a query programming language for managing RD
       WHERE hire_date IS NULL;
       ```
 
-      <i><ins>Note:</ins> Contrary usage --> `IS NOT NULL`</i>
+      <i><ins>Note:</ins> Contrary usage --> `IS NOT NULL`. It would return every row that doesn't have `NULL` data.</i>
