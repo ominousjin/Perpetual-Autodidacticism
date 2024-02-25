@@ -289,3 +289,57 @@ SQL or Structured Query Language is a query programming language for managing RD
       ```
 
       <i><ins>Note:</ins> Contrary usage --> `IS NOT NULL`. It would return every row that doesn't have `NULL` data.</i>
+
+16. Updating data in table
+
+    Use `UPDATE` statement for updating data in a table. 
+
+    - Syntax:
+
+      ```
+      UPDATE <table-name>
+      SET <column-name> = value
+      WHERE <condition>;
+      ```
+
+    - Example 1:
+
+      ```
+      UPDATE employees
+      SET hourly_pay = 18.76, hire_date = "2024-01-27"
+      WHERE employee_id = 6;
+      ```
+
+    - Example 2: (setting hire_date as `NULL`)
+
+      ```
+      UPDATE employees
+      SET hire_date = NULL
+      WHERE employee_id = 6;
+      ```
+
+17. Deleting data in table
+
+    Use `DELETE` statement for deleting row in a table. 
+
+    - Syntax:
+
+      ```
+      DELETE FROM <table-name>
+      WHERE <condition>;
+      ```
+
+    - Example 1:
+
+      ```
+      DELETE FROM employees
+      WHERE employee_id = 6;
+      ```
+
+18. `AUTOCOMMIT`, `COMMIT`, and `ROLLBACK`
+    
+    - Autocommit is a feature in database systems where each SQL statement is automatically committed immediately after it is executed. This means that each individual SQL statement is treated as a transaction by itself, and it is automatically committed to the database. 
+
+    - Commit is an SQL statement that finalizes the changes made in a transaction and makes those changes permanent in the database. When you issue a commit statement, all the changes made within the transaction are saved to the database. 
+
+    - Rollback is an SQL statement that undoes the changes made in the current transaction and restores the database to its state before the transaction began.
