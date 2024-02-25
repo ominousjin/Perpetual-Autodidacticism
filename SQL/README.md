@@ -336,7 +336,7 @@ SQL or Structured Query Language is a query programming language for managing RD
       WHERE employee_id = 6;
       ```
 
-18. `AUTOCOMMIT`, `COMMIT`, and `ROLLBACK`
+18. AUTOCOMMIT, COMMIT, and ROLLBACK
     
     - Autocommit is a feature in database systems where each SQL statement is automatically committed immediately after it is executed. This means that each individual SQL statement is treated as a transaction by itself, and it is automatically committed to the database. It can be turned off using `SET AUTOCOMMIT = OFF;`.
 
