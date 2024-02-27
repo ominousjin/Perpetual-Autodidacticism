@@ -343,3 +343,37 @@ SQL or Structured Query Language is a query programming language for managing RD
     - Commit is an SQL statement that finalizes the changes made in a transaction and makes those changes permanent in the database. When you issue a commit statement, all the changes made within the transaction are saved to the database. Syntax: `COMMIT;`.
 
     - Rollback is an SQL statement that undoes the changes made in the current transaction and restores the database to its state before the transaction began. Syntax: `ROLLBACK;`.
+
+19. CURRENT_DATE() & CURRENT_TIME()
+
+    In SQL, `CURRENT_DATE()` and `CURRENT_TIME()` are functions that return the current date and time, respectively, based on the system clock of the server where the database is hosted.
+
+    ```
+    CREATE TABLE test(
+      my_date DATE,
+      my_time TIME,
+      my_datetime DATETIME
+    );
+
+    INSERT INTO test
+    VALUES (CURRENT_DATE(), CURRENT_TIME(), NOW());
+    ```
+
+    In SQL, `NOW()` is a function that returns the current date and time together.
+
+    If you put -1 or +1 after CURRENT_DATE() in SQL, you are performing date arithmetic to subtract or add days to the current date.
+
+    For e.g.
+
+    ```
+    SELECT CURRENT_DATE() - 1;
+    ```
+
+    This would subtract one day from the current date.
+
+    ```
+    SELECT CURRENT_DATE() + 1;
+    ```
+
+    SELECT CURRENT_DATE() + 1;
+
