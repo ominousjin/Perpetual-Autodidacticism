@@ -375,5 +375,5 @@ SQL or Structured Query Language is a query programming language for managing RD
     SELECT CURRENT_DATE() + 1;
     ```
 
-    SELECT CURRENT_DATE() + 1;
+    This would add one day to the current date.
 
