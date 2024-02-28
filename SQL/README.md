@@ -499,11 +499,3 @@ SQL or Structured Query Language is a query programming language for managing RD
     ```
 
     <i><ins>Note:</ins> The above implementation will give an error - `Error Code: 3819. Check constraint 'chk_hourly_pay' is violated` as the value for `hourly_pay` should be greater than or equal to 10.</i>
-
-    Modifying a `CHECK` constraint:
-
-
-
-
-
-
