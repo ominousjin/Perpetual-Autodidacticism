@@ -377,3 +377,47 @@ SQL or Structured Query Language is a query programming language for managing RD
 
     This would add one day to the current date.
 
+20. UNIQUE CONSTRAINT
+
+    `UNIQUE` constraint ensures that all the values in a column are different. This constraint can be added while creating the table or after the table has been created.
+
+    ```
+    CREATE TABLE products (
+       product_id INT,
+       product_name VARCHAR(25) UNIQUE,
+       price DECIMAL(4, 2)
+    );
+    ```
+
+    Adding `UNIQUE` constraint after creating the table
+
+    ```
+    ALTER TABLE products
+    ADD CONSTRAINT
+    UNIQUE(<column-nmae>);
+    ```
+
+    <i><ins>Note:</ins> Don't forget to replace `<column-name>` with actual column name.</i>
+
+    ```
+    ALTER TABLE products
+    ADD CONSTRAINT
+    UNIQUE(product_name);
+    ```
+
+    Since, `product_name` is already unique, this will return `1 warning(s): 1831 Duplicate index 'product_name_2' defined on the table 'mydb.products'`.
+
+    As, `UNIQUE` doesn't allow duplicate values, trying out something like this:
+
+    ```
+    INSERT INTO products
+    VALUES   (100, "hamburger", 3.99),
+             (101, "fries", 1.89),
+             (102, "soda", 1.00),
+             (103, "ice cream", 1.49)
+             (104, "fries", 1.75);
+    ```
+
+    might give an error - `Error Code: 1064. You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(104, "fries", 1.75)' at line 6`.
+
+
