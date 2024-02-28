@@ -420,4 +420,90 @@ SQL or Structured Query Language is a query programming language for managing RD
 
     might give an error - `Error Code: 1064. You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(104, "fries", 1.75)' at line 6`.
 
+21. NOT NULL CONSTRAINT
+
+    `NOT NULL` constraint doesn't allows a column value to be NULL.
+
+    ```
+    CREATE TABLE products (
+       product_id INT,
+       product_name VARCHAR(25) UNIQUE,
+       price DECIMAL(4, 2) NOT NULL
+    );
+    ```
+
+    Adding the `NOT NULL` constraint after creating the table. (Note: Use `MODIFY`)
+
+    ```
+    ALTER TABLE products
+    MODIFY price DECIMAL(4,2) NOT NULL;
+    ```
+
+    So, inserting any NULL values in the column might give an error - `Error Code: 1048. Column 'price' cannot be null`. For e.g.
+
+    ```
+    INSERT INTO products
+    VALUES (104, "cookies", NULL);
+    ```
+
+22. CHECK CONSTRAINT
+
+    `CHECK` constraint is a type of constraint that allows you to specify a condition that each row in a table must satisfy for any update or insertion to be accepted.
+
+    ```
+    CREATE TABLE table_name (
+       column1 datatype,
+       column2 datatype,
+       ...
+       CHECK (condition)
+    );
+    ```
+
+    If you have some later plans for the `CHECK` constraint like deleting or modifying it, then add a constraint name to it.
+
+    ```
+    CREATE TABLE table_name (
+       column1 datatype,
+       column2 datatype,
+       ...
+       CONSTRAINT constraint_name CHECK (condition)
+    );
+    ```
+
+    Adding `CHECK` constraint after the table has been created:
+
+    ```
+    ALTER TABLE table_name
+    ADD CONSTRAINT constraint_name CHECK (condition);
+    ```
+
+    Dropping a `CHECK` constraint:
+
+    ```
+    ALTER TABLE table_name
+    DROP CONSTRAINT constraint_name;
+    ```
+
+    Let's implement an hourly pay check in the following example...
+
+    ```
+    ALTER TABLE employees
+    ADD CONSTRAINT chk_hourly_pay CHECK (hourly_pay >= 10.00);
+    ```
+
+    Inserting a row while `CHECK` constraint has been implemented. For e.g.
+
+    ```
+    INSERT INTO employees
+    VALUES (6, "Sheldon", "Planks", 5.00, "2023-01-07");
+    ```
+
+    <i><ins>Note:</ins> The above implementation will give an error - `Error Code: 3819. Check constraint 'chk_hourly_pay' is violated` as the value for `hourly_pay` should be greater than or equal to 10.</i>
+
+    Modifying a `CHECK` constraint:
+
+
+
+
+
 
