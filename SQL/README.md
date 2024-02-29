@@ -523,7 +523,7 @@ SQL or Structured Query Language is a query programming language for managing RD
       ALTER price SET DEFAULT 0;
       ```
 
-    - Inserting data in tables requires user to mention columns explicitly
+    - Inserting data in tables requires user to mention columns explicitly otherwise this error is returned - `Error Code: 1136. Column count doesn't match value count at row 1`.
 
       ```
       INSERT INTO products (product_id, product_name)
@@ -534,3 +534,5 @@ SQL or Structured Query Language is a query programming language for managing RD
 
       SELECT * FROM products;
       ```
+
+      ![image](https://github.com/akarsh0913/Perpetual-Autodidacticism/assets/134067749/59af2c83-3797-4efa-a49a-dd3b4b7cb068)
