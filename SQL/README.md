@@ -535,4 +535,52 @@ SQL or Structured Query Language is a query programming language for managing RD
       SELECT * FROM products;
       ```
 
+      <table>
+         <tr>
+            <th>product_id</th>
+            <th>product_name</th>
+            <th>price</th>
+         </tr>
+         <tr>
+            <td>100</td>
+            <td>hamburger</td>
+            <td>3.99</td>
+         </tr>
+         <tr>
+            <td>101</td>
+            <td>fries</td>
+            <td>1.89</td>
+         </tr>
+         <tr>
+            <td>102</td>
+            <td>soda</td>
+            <td>1.00</td>
+         </tr>
+         <tr>
+            <td>103</td>
+            <td>ice cream</td>
+            <td>1.49</td>
+         </tr>
+         <tr>
+            <td>104</td>
+            <td>straw</td>
+            <td>0.00</td>
+         </tr>
+         <tr>
+            <td>105</td>
+            <td>napkin</td>
+            <td>0.00</td>
+         </tr>
+         <tr>
+            <td>106</td>
+            <td>fork</td>
+            <td>0.00</td>
+         </tr>
+         <tr>
+            <td>107</td>
+            <td>spoon</td>
+            <td>0.00</td>
+         </tr>
+      </table>
+
       ![image](https://github.com/akarsh0913/Perpetual-Autodidacticism/assets/134067749/59af2c83-3797-4efa-a49a-dd3b4b7cb068)
