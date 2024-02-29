@@ -511,8 +511,8 @@ SQL or Structured Query Language is a query programming language for managing RD
       ```
       CREATE TABLE products (
          product_id INT,
-          product_name VARCHAR(25),
-          price DECIMAL(4,2) DEFAULT 0
+         product_name VARCHAR(25),
+         price DECIMAL(4,2) DEFAULT 0
       );
       ```
 
@@ -582,3 +582,50 @@ SQL or Structured Query Language is a query programming language for managing RD
             <td>0.00</td>
          </tr>
       </table>
+
+    - Example:
+
+      Let's say we have a table of transactions. After inserting a new transaction, we will insert a time stamp of when that transaction took place and that time stamp would be DEFAULT.
+
+      - Creating the table
+         
+        ```
+        CREATE TABLE transactions(
+            transaction_id INT,
+            amount DECIMAL(5, 2),
+            transaction_date DATETIME DEFAULT NOW()
+        );
+        ```
+
+      - Inserting data into the table
+         
+        ```
+        INSERT INTO transactions (transaction_id, amount)
+        VALUES  (1, 4.99),
+                (2, 3.67),
+                (3, 5.23);
+        ```
+
+        <table>
+         <tr>
+            <th>transaction_id</th>
+            <th>amount</th>
+            <th>transaction_date</th>
+         </tr>
+         <tr>
+            <td>1</td>
+            <td>4.99</td>
+            <td>2024-02-29 17:36:47</td>
+         </tr>
+         <tr>
+            <td>2</td>
+            <td>3.67</td>
+            <td>2024-02-29 17:36:47</td>
+         </tr>
+         <tr>
+            <td>3</td>
+            <td>5.23</td>
+            <td>2024-02-29 17:36:47</td>
+         </tr>      
+        </table>
+
