@@ -582,5 +582,3 @@ SQL or Structured Query Language is a query programming language for managing RD
             <td>0.00</td>
          </tr>
       </table>
-
-      ![image](https://github.com/akarsh0913/Perpetual-Autodidacticism/assets/134067749/59af2c83-3797-4efa-a49a-dd3b4b7cb068)
