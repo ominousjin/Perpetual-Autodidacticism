@@ -629,3 +629,49 @@ SQL or Structured Query Language is a query programming language for managing RD
          </tr>      
         </table>
 
+24. PRIMARY KEY CONSTRAINT
+
+    `PRIMARY KEY` constraint can be applied to a column where each value in that column must both be unique and not null.
+
+    It is typically used as a unique identifier.
+
+    The `PRIMARY KEY` constraint uniquely identifies each record in a table.
+
+    Imagine you have a table students with the following columns:
+
+    - `student_id` (Primary Key)
+    - `first_name`
+    - `last_name`
+    - `date_of_birth`
+
+    The student_id column serves as the primary key. Think of it like a unique identifier for each student in the school. Just like how every student in a school might have a unique student ID number, in a database, the student_id ensures that each student's record is unique and identifiable.
+
+    For example:
+
+    <table>
+       <tr>
+         <th>student_id</th>
+         <th>first_name</th>
+         <th>last_name</th>
+         <th>date_of_birth</th>
+       </tr>
+       <tr>
+         <td>1</td>
+         <td>John</td>
+         <td>Doe</td>
+         <td>2002-05-15</td>
+       </tr>
+       <tr>
+         <td>2</td>
+         <td>Jane</td>
+         <td>Smith</td>
+         <td>2003-08-22</td>
+       </tr>
+       <tr>
+         <td>3</td>
+         <td>Michael</td>
+         <td>Johnson</td>
+         <td>2002-11-30</td>
+       </tr>
+    </table> 
+
