@@ -499,3 +499,38 @@ SQL or Structured Query Language is a query programming language for managing RD
     ```
 
     <i><ins>Note:</ins> The above implementation will give an error - `Error Code: 3819. Check constraint 'chk_hourly_pay' is violated` as the value for `hourly_pay` should be greater than or equal to 10.</i>
+
+23. DEFAULT CONSTRAINT
+
+    The DEFAULT constraint is used to set a default value for a column.
+
+    The default value will be added to all new records, if no other value is specified.
+
+    - Creating a table
+
+      ```
+      CREATE TABLE products (
+         product_id INT,
+          product_name VARCHAR(25),
+          price DECIMAL(4,2) DEFAULT 0
+      );
+      ```
+
+    - Alter a table
+
+      ```
+      ALTER TABLE products
+      ALTER price SET DEFAULT 0;
+      ```
+
+    - Inserting data in tables requires user to mention columns explicitly
+
+      ```
+      INSERT INTO products (product_id, product_name)
+      VALUES   (104, "straw"),
+               (105, "napkin"),
+               (106, "fork"),
+               (107, "spoon");
+
+      SELECT * FROM products;
+      ```
