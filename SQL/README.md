@@ -674,4 +674,3 @@ SQL or Structured Query Language is a query programming language for managing RD
          <td>2002-11-30</td>
        </tr>
     </table> 
-
