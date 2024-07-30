@@ -1,0 +1,175 @@
+Hello World! Again....
+6
+nanimo nandesuka
+-------------
+
+John Doe
+21
+1.0
+D
+true
+18
+30
+-------------
+
+Student Name: Osamu Dazai
+Student ID: 35356
+Student Age: 21
+Student Fee: 75.25
+Student Grade: B
+-------------
+
+123
+30000
+1000000
+1500000000
+5.75
+19.99
+35000.0
+120000.0
+-------------
+
+6.0
+9
+-------------
+
+86.4
+-------------
+
+1
+-------------
+
+16
+TODAY IS MONDAY.
+today is monday.
+9
+Today is Monday. How about tomorrow?
+-------------
+
+We are so called "Vikings".
+It's alright.
+This character \ is called backslash.
+-------------
+
+10
+3
+8.0
+4.7
+0.292536242035067
+48
+-------------
+
+20 is greater than 18
+35 is greater than 20
+Good Night.
+Good evening.
+-------------
+
+Thursday
+-------------
+
+0
+1
+2
+3
+4
+-------------
+
+5
+6
+7
+8
+9
+-------------
+
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+-------------
+
+0
+2
+4
+6
+8
+-------------
+
+Outer: 1
+ Inner: 1
+ Inner: 2
+ Inner: 3
+Outer: 2
+ Inner: 1
+ Inner: 2
+ Inner: 3
+-------------
+
+Volvo
+BMW
+Ford
+Mazda
+-------------
+
+Mercedes
+Toyota
+Lexus
+Audi
+-------------
+
+0
+1
+2
+3
+-------------
+
+0
+1
+2
+3
+5
+6
+7
+8
+9
+-------------
+
+numArray[0]: 1
+numArray[1]: 2
+numArray[2]: 3
+numArray[3]: 4
+numArray[4]: 5
+numArray[5]: 6
+numArray[6]: 7
+numArray[7]: 8
+numArray[8]: 9
+-------------
+
+1 2 3 4 
+5 6 7 8 
+-------------
+
+A method was invoked!
+JIN#3765 used this function on 2024-07-31 at 00:09:52.527967600
+-------------
+
+Grow up!!!
+Yo! You're living the high life...
+-------------
+
+11
+2306457
+-------------
+
+15
+24
+34
+-------------
+
+55
